@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    background-color: white;
+}
+
+main {
+    background: url(layout-01-assets/img11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-self: center;
+    height: 20vh;
+}
+
+#S1 {
+    align-self: flex-start;;
+}
+
+#S2 {
+    align-self: center;
+}
