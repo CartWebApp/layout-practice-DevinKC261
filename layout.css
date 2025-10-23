@@ -1,8 +1,18 @@
 body {
-    display: flex;
     background-color: white;
     flex-direction: column;
     font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Hero Text flexbox */
@@ -12,30 +22,44 @@ main {
     background-size: cover;
     background-position: center;
     height: 50vh;
-    }
-
-main {
     text-align: center;
     color: white;
     align-content: center;
 }
     /* Content Boxes */
 
- .intro {
+div.cards{
     display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    margin-top: 5vh;
-    padding: -2rem;
-    background-color: lightgray;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 1rem auto;
 }
 
-.intro > section.head {
-    justify-content: space-around;
+.cards section {
+    width: 32%;
 }
 
-article section.sec {
-    
+.intro > div > section > p{
+    /* flex-wrap: wrap; */
+    padding: -1rem;
+}
+.intro > div > .head1 > button {
+    background-color: green;
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 15%;
+}
+
+.intro > .head2 > button {
+    background-color: lightblue;
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 15%;
 }
 .services {
     background-image: url(layout-01-assets/img13.jpg);
@@ -44,33 +68,21 @@ article section.sec {
     height: 25vh;
 }
 
-.services:nth-child(5) {
-    align-content: center;
-    justify-self: center;
-    align-self: center;
-}
-
-
 /* Navagation bar (make center somehow) */
 
 nav {
-    padding: 1rem;
-    background-color: black;
-}
-
-nav > ul {
-    list-style-type: none;
     display: flex;
-    margin: 0;
-    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: black;
+    justify-content: center;
 }
 
-nav > ul > li {
-    display: block;
-    padding: 1rem;
-    background-color: black;
-    color: white;
+nav > a {
+    list-style-type: none;
     text-decoration: none;
-    border: solid 1px white;
-    transition: all ease 150ms;
+    color: white;
+    border: solid white 1px;
+    padding: 1rem;
+    margin: 0.5rem;  
 }
