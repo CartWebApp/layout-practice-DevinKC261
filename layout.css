@@ -23,6 +23,7 @@ main {
 
  .intro {
     display: flex;
+    flex-wrap: wrap;
     width: 30%;
     margin-top: 5vh;
     padding: -2rem;
@@ -33,6 +34,9 @@ main {
     justify-content: space-around;
 }
 
+article section.sec {
+    
+}
 .services {
     background-image: url(layout-01-assets/img13.jpg);
     background-size: cover;
@@ -46,10 +50,12 @@ main {
     align-self: center;
 }
 
+
 /* Navagation bar (make center somehow) */
 
 nav {
     padding: 1rem;
+    background-color: black;
 }
 
 nav > ul {
