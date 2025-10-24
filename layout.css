@@ -14,8 +14,8 @@ img {
     width: 100%;
     object-fit: cover;
 }
-
-/* Hero Text flexbox */
+/*--------------------------------------------*/
+    /* Hero Text flexbox */
 
 main {
     background: url(layout-01-assets/img11.jpg);
@@ -38,34 +38,93 @@ div.cards{
 
 .cards section {
     width: 32%;
+    /* Background needs color adjustment*/
+    background-color: lightgray;
 }
 
-.intro > div > section > p{
-    /* flex-wrap: wrap; */
-    padding: -1rem;
+/* Text aligning*/
+
+div.cards > section > h3 {
+    margin: 1rem;
 }
+
+div.cards > section > h3 > p {
+    margin: 1rem;
+}
+.cards > .sec {
+    width: 49%;
+    margin-top: 1rem;
+}
+
+/*--------------------------------------------*/
+    /* Sub secetion for buttons in order (maybe needs sizing*3) */
+
 .intro > div > .head1 > button {
     background-color: green;
     margin: 1rem;
     padding: 5px;
     border-radius: 5px;
     color: white;
-    width: 15%;
+    width: 40%;
 }
 
-.intro > .head2 > button {
+.intro > div > .head2 > button {
+    /* Needs color adjustment */
     background-color: lightblue;
     margin: 1rem;
     padding: 5px;
     border-radius: 5px;
     color: white;
-    width: 15%;
+    width: 40%;
 }
+
+.intro > div > .head3 > button {
+    background-color: red;
+    margin: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    width: 40%;
+}
+
+.intro > div > .sec > button {
+    /* positioning needs to be to the right */
+    margin: 1rem;
+    padding: 4px;
+    border-radius: 4px;
+    width: 20%;
+    justify-content: flex-end;
+}
+
+/* -------------------------------------*/
+    /* 2nd banner*/
+
 .services {
     background-image: url(layout-01-assets/img13.jpg);
     background-size: cover;
     background-position: center;
-    height: 25vh;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    padding: 6rem;
+}
+
+/* 2nd card set*/
+div.cards2 > section > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+div.cards2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: 1rem auto;
+}
+
+div.cards2 > section {
+    width: 30%;
 }
 
 /* Navagation bar (make center somehow) */
