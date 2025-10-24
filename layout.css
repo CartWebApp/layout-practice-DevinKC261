@@ -1,7 +1,7 @@
 body {
     background-color: white;
     flex-direction: column;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 
 }
@@ -14,8 +14,9 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
 /*--------------------------------------------*/
-    /* Hero Text flexbox */
+/* Hero Text flexbox */
 
 main {
     background: url(layout-01-assets/img11.jpg);
@@ -26,14 +27,15 @@ main {
     color: white;
     align-content: center;
 }
-    /* Content Boxes */
 
-div.cards{
+/* Content Boxes */
+
+div.cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     max-width: 980px;
-    margin: 1rem auto;
+    margin: 3rem auto;
 }
 
 .cards section {
@@ -44,22 +46,24 @@ div.cards{
 
 /* Text aligning*/
 
-div.cards > section > h3 {
+div.cards>section>h3 {
     margin: 1rem;
 }
 
-div.cards > section > h3 > p {
+div.cards>section>p {
     margin: 1rem;
+    width: 75%;
 }
-.cards > .sec {
+
+.cards>.sec {
     width: 49%;
     margin-top: 1rem;
 }
 
 /*--------------------------------------------*/
-    /* Sub secetion for buttons in order (maybe needs sizing*3) */
+/* Sub secetion for buttons in order (maybe needs sizing*3) */
 
-.intro > div > .head1 > button {
+.intro>div>.head>.green {
     background-color: green;
     margin: 1rem;
     padding: 5px;
@@ -68,7 +72,7 @@ div.cards > section > h3 > p {
     width: 40%;
 }
 
-.intro > div > .head2 > button {
+.intro>div>.head>.blue {
     /* Needs color adjustment */
     background-color: lightblue;
     margin: 1rem;
@@ -78,7 +82,7 @@ div.cards > section > h3 > p {
     width: 40%;
 }
 
-.intro > div > .head3 > button {
+.intro>div>.head>.red {
     background-color: red;
     margin: 1rem;
     padding: 5px;
@@ -87,7 +91,7 @@ div.cards > section > h3 > p {
     width: 40%;
 }
 
-.intro > div > .sec > button {
+.intro>div>.sec>button {
     /* positioning needs to be to the right */
     margin: 1rem;
     padding: 4px;
@@ -96,10 +100,15 @@ div.cards > section > h3 > p {
     justify-content: flex-end;
 }
 
-/* -------------------------------------*/
-    /* 2nd banner*/
+.intro>div.cards>section>button {
+    margin: 1rem auto;
 
-.services {
+}
+
+/* -------------------------------------*/
+/* 2nd banner*/
+
+.services>.S2 {
     background-image: url(layout-01-assets/img13.jpg);
     background-size: cover;
     background-position: center;
@@ -109,24 +118,25 @@ div.cards > section > h3 > p {
     padding: 6rem;
 }
 
+.services>.S2>p {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    background-color: gray;
+}
+
+/*-------------------------------------------*/
 /* 2nd card set*/
-div.cards2 > section > img {
+
+.cards>.head2 {
+    width: 23%;
+    background-color: lightgray;
+}
+
+.cards>.bc {
     width: 100%;
-    object-fit: cover;
+    margin-top: 1rem;
 }
-
-div.cards2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    max-width: 980px;
-    margin: 1rem auto;
-}
-
-div.cards2 > section {
-    width: 30%;
-}
-
 /* Navagation bar (make center somehow) */
 
 nav {
@@ -137,11 +147,11 @@ nav {
     justify-content: center;
 }
 
-nav > a {
+nav>a {
     list-style-type: none;
     text-decoration: none;
     color: white;
     border: solid white 1px;
     padding: 1rem;
-    margin: 0.5rem;  
+    margin: 0.5rem;
 }
