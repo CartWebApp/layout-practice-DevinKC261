@@ -28,6 +28,9 @@ main {
     align-content: center;
 }
 
+main > h1 {
+    font-size: 45px;
+}
 /* Content Boxes */
 
 div.cards {
@@ -60,9 +63,13 @@ div.cards>section>p {
     margin-top: 1rem;
 }
 
+
 /*--------------------------------------------*/
 /* Sub secetion for buttons in order (maybe needs sizing*3) */
 
+#btn {
+    margin-top: 2rem;
+}
 .intro>div>.head>.green {
     background-color: green;
     margin: 1rem;
@@ -97,14 +104,48 @@ div.cards>section>p {
     padding: 4px;
     border-radius: 4px;
     width: 20%;
-    justify-content: flex-end;
 }
 
-.intro>div.cards>section>button {
-    margin: 1rem auto;
-
+#btn {
+    text-align: center;
+    justify-self: center;
+    align-self: flex-end;
+    padding: .5rem;
 }
 
+.intro > .cards > #btn {
+    margin-top: 2rem;
+}
+
+.intro>div.cards>section>.read {
+    border: solid 0.5px black;
+    border-radius: 6%;
+    text-align: center;
+    padding: .5rem;
+    width: 23%;
+    margin-right: 5rem;
+    justify-self: flex-end;
+}
+
+.services > div.cards > .head2 > #btn {
+    border: solid 0.5px black;
+    border-radius: 6%;
+    text-align: center;
+    padding: 0.5rem;
+    width: 40%;
+    margin-right: 5rem;
+    justify-self: flex-end;
+}
+
+.services > div.cards > .bc > #btn {
+    border: solid 0.5px black;
+    border-radius: 6%;
+    text-align: center;
+    padding: 0.5rem;
+    width: 15%;
+    margin-right: 5rem;
+    justify-self: flex-start;
+}
 /* -------------------------------------*/
 /* 2nd banner*/
 
@@ -156,4 +197,72 @@ nav>a {
     padding: 1rem;
     margin: 1rem;
     text-align: center;
+}
+
+/*--------------------------------------------*/
+/* Contact form section */
+
+.contacts {
+    background-image: url(layout-01-assets/img14.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    align-content: center;
+}
+
+.contacts > .forms > p {
+    width: 36%;
+    justify-self: center;
+}
+
+.input > p {
+    color: black;
+    font-size: 13px;
+    background-color:rgba(211, 211, 211, 0.3);
+    padding: 0.5rem;
+    width: 350px;
+}
+.contacts > div.end > .input > .mess {
+    background-color:rgba(211, 211, 211, 0.3);
+    color: black;
+    height: 100px;
+    align-self: flex-end;
+    width: 350px;
+}
+
+.contacts > div.end > .input{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contacts > div.end > .input > #btn {
+    color: white;
+    background-color: black;
+    border: solid 0.5px black;
+    border-radius: 6%;
+    text-align: center;
+    padding: 1rem;
+    width: 10%;
+    margin-right: 5rem;
+    justify-self: flex-start;
+}
+/*--------------------------------------------*/
+/* Footer section */
+
+footer.Info {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: solid 1px black;
+}
+
+.Info > h3 {
+    font-size: 45px;
+    text-decoration: none;
+}
+
+footer.copyend > h3 {
+    text-align: center;
+    font-size: 15px;
 }
